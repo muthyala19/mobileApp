@@ -1,0 +1,94 @@
+<mat-toolbar color="primary">
+    <mat-icon _ngcontent-c1="" (click)="toggleMenu()" class="mat-icon material-icons mat-icon-no-color" role="img"
+        aria-hidden="true">menu</mat-icon>
+    <span>Home</span>
+</mat-toolbar>
+
+<mat-sidenav-container [ngClass]="status?'hide-menu': ''">
+
+    <mat-sidenav class="mat-elevation-z8" opened>
+        <div class="container">
+        <div class="container-img">
+            <img class="avatar mat-elevation-z8" src="https://source.unsplash.com/c_GmwfHBDzk/200x200" />
+        </div>
+        <div class="containter-name">
+            <h4 class="name">John Smith</h4>
+            <p class="designation">Software Engineer</p>
+        </div>
+    </div>
+        <mat-divider></mat-divider>
+        <button mat-button class="menu-button">
+            <mat-icon>import_contacts</mat-icon>&nbsp;
+            <span>Online Classes</span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-button class="menu-button">
+            <mat-icon>insights</mat-icon>&nbsp;
+            <span>Learning Analysis</span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-button class="menu-button">
+            <mat-icon>bookmarks</mat-icon>&nbsp;
+            <span>Bookmarks</span>
+        </button>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            <mat-icon>connect_without_contact</mat-icon>&nbsp;
+            <span>Parent Connect</span>
+        </button>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            <mat-icon>notifications_active</mat-icon>&nbsp;
+            <span>Notifications</span>
+        </button>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            <mat-icon>share</mat-icon>&nbsp;
+            <span>Share the app </span>
+        </button>
+
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            <mat-icon>call</mat-icon>&nbsp;
+            <span>Contact Us</span>
+        </button>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            <mat-icon>redeem</mat-icon>&nbsp;
+            <span>Redeem Voucher</span>
+        </button>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            <mat-divider></mat-divider>
+            <mat-icon>help</mat-icon>&nbsp;
+            <span>Subscribe Now</span>
+        </button>
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            <mat-icon>policy</mat-icon>&nbsp;
+            <span>Terms & Conditions</span>
+        </button>
+        <mat-divider></mat-divider>
+
+        <button mat-button class="cont-menu-button">
+            <mat-icon>call</mat-icon>&nbsp;
+            <span>Contact Us</span>
+        </button>
+    </mat-sidenav>
+
+
+</mat-sidenav-container>

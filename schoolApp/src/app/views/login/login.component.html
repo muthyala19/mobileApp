@@ -1,0 +1,22 @@
+<h2>Welcome</h2>
+
+<section class="login1">
+    <img src="/assets/img/login1.svg" class="login-img">
+</section>
+
+<form class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Enter Mobile Number</mat-label>
+        <input matInput placeholder="Mobile Number" type="number" pattern="\d*" maxlength="10">
+    </mat-form-field>
+</form>
+
+<section>
+    <div class="example-button-row">
+        <a href="/verify"> <button mat-raised-button color="primary">Get OTP</button></a>
+    </div>
+    <label class="bottom-line">You will receive 4 digits code to be verify</label>
+    <div id="policy"><a href="#">Privacy Policy</a></div>
+</section>
+
+<router-outlet></router-outlet>

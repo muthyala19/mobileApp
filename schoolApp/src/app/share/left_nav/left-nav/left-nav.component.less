@@ -1,0 +1,90 @@
+@light-gray: rgb(98, 98, 98);
+@white: #fff;
+
+mat-sidenav{
+    width: 99%;
+    text-align: left;
+
+}
+
+.mat-sidenav-container{
+    height: 100%;
+    // transition-delay: 0.5s;
+    transition: left 1s;
+    overflow-y: scroll;
+    height: 590px;
+}
+
+.menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+
+    mat-icon {
+        margin-right: 8px;
+    }
+}
+
+.avatar {
+    margin-top: 16px;
+    margin-left: 16px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name {
+    margin-top: 8px;
+    margin-left: 16px;
+    font-weight: normal;
+}
+
+.designation {
+    margin-top: -16px;
+    margin-left: 16px;
+    font-size: 0.7rem;
+    color:@light-gray;
+}
+
+mat-divider {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: @light-gray;
+}
+mat-sidenav-container{
+position: absolute;
+left: 0px;
+top: 65px;
+height: 350px;
+width: 350px;
+}
+mat-sidenav-container.hide-menu{
+    left: -350px;
+}
+
+.cont-menu-button{
+    border:solid;
+    border: none;
+    color: #000;
+    top: 30px;
+    display: inline;
+    width: 70%;
+    margin-left: 30px;
+  background: #fff;
+    border-radius: 50px;
+
+}
+.container{
+    position: relative;
+    height: 150px;
+}
+.container-img{
+    position: absolute;
+}
+.containter-name{
+    position: absolute;
+    left: 119px;
+    top: 40px;
+}
