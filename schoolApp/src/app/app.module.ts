@@ -18,6 +18,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatSelectModule} from '@angular/material/select';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 
@@ -49,6 +53,7 @@ import { environment } from '../environments/environment';
     MatToolbarModule,
     MatSidenavModule,
     MatDividerModule,
+    MatGridListModule,MatSelectModule,MatBadgeModule,MatTabsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
