@@ -1,0 +1,38 @@
+{
+    "name": "Isrg Knowledge Base",
+    "short_name":"Isrg Lite",
+    "description": "Isrg Rajan the official website that offers latest News, Education, Knowledgebase, Articles. Sci-Tech, Lifestyle, Health, Travels, Gadgets, IT Solution..",
+    "icons": [
+      {
+        "src": "192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "256x256.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      },
+      {
+        "src": "512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "permissions":[
+      "gcm",
+      "storage",
+      "notifications"
+    ],
+    "author": {
+      "name":"Isrg",
+      "wesbite":"https://www.isrgrajan.com/"
+    },
+    "gcm_sender_id": "YOUR-GCM_ID",
+    "gcm_user_visible_only": true,
+    "start_url": "/",
+    "display": "standalone",
+    "background_color":"#FFF",
+    "theme_color": "#FFF",
+    "orientation": "portrait"
+  }

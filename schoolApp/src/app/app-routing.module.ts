@@ -9,7 +9,7 @@ const routes: Routes = [
 { path: 'login', component: LoginComponent },
 { path: 'verify', component: VerifyComponent },
 { path: 'home', component: HomeComponent },
-{ path: '**', redirectTo: '' }];
+{ path: '**', redirectTo:  'login'}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
