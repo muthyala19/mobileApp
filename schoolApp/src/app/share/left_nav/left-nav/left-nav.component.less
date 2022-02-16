@@ -1,5 +1,8 @@
-@light-gray: rgb(98, 98, 98);
+@light-gray: rgb(228, 227, 227);
 @white: #fff;
+@blue: #3F51B5;
+@blue1 :#6573c2;
+
 
 mat-sidenav{
     width: 99%;
@@ -14,6 +17,7 @@ mat-sidenav{
     overflow-y: scroll;
     height: 590px;
 }
+
 
 .menu-button {
     width: 100%;
@@ -67,13 +71,14 @@ mat-sidenav-container.hide-menu{
 .cont-menu-button{
     border:solid;
     border: none;
-    color: #000;
+    color: @white;
     top: 30px;
     display: inline;
     width: 70%;
     margin-left: 30px;
-  background: #fff;
+    background-image: linear-gradient(to right, @blue1, @blue, rgb(44, 104, 160));
     border-radius: 50px;
+    
 
 }
 .container{
