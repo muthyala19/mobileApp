@@ -11,7 +11,7 @@ const routes: Routes = [
 { path: 'verify', component: VerifyComponent },
 { path: 'home', component: HomeComponent },
 { path: 'signup', component: SignupComponent },
-{ path: '**', redirectTo: '' }];
+{ path: '**', redirectTo:  'login'}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -16,9 +16,14 @@ import {LeftNavComponent } from './share/left_nav/left-nav/left-nav.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatSelectModule} from '@angular/material/select';
-import {MatBadgeModule} from '@angular/material/badge';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+
+
+
+
+
+
 
 
 
@@ -43,7 +48,13 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatIconModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatDividerModule,MatGridListModule,MatSelectModule,MatBadgeModule
+    MatDividerModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
