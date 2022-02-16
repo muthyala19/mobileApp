@@ -1,0 +1,49 @@
+<div class="form">
+    <mat-icon class="icon">person</mat-icon> &nbsp;
+    <mat-form-field appearance="fill">
+        
+              <mat-label>Student Name</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <mat-divider></mat-divider>
+    <mat-icon class="icon">mail_outline</mat-icon> &nbsp;
+        <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="pat@example.com" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+   
+    <mat-divider></mat-divider>
+    <mat-icon class="icon">menu_book</mat-icon> &nbsp;
+    <mat-form-field appearance="fill">
+        <mat-label>Course</mat-label>
+        <mat-select>
+            <mat-option value="one">Mathametics</mat-option>
+            <mat-option value="two">Physics</mat-option>
+            <mat-option value="thre">Chemistry</mat-option>
+            <mat-option value="four">Computer Science</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-divider></mat-divider>
+    <mat-icon class="icon">location_on</mat-icon>&nbsp;
+    <mat-form-field appearance="fill">
+        <mat-label>City / District</mat-label>
+        <input matInput>
+    </mat-form-field>
+
+    <mat-divider></mat-divider>
+    <mat-icon class="icon">location_city</mat-icon>&nbsp;
+    <mat-form-field appearance="fill">
+        <mat-label>School Name</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <mat-divider></mat-divider>
+
+    <button mat-button class="submit">
+        
+        <span>Submit</span>
+    </button>
+    <div id="policy"><a href="#">Privacy Policy</a></div>
+</div>
+
