@@ -11,7 +11,7 @@ export class LeftNavComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  status: boolean = false;
+  status: boolean = true;
   toggleMenu() {
     this.status = !this.status;
     // alert("test");

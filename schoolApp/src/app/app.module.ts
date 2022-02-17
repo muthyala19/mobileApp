@@ -7,12 +7,19 @@ import { LoginComponent } from './views/login/login.component';
 import { VerifyComponent } from './views/verify/verify.component';
 import { SignupComponent } from './views/signup/signup.component';
 import { HomeComponent } from './views/home/home.component';
+
+
+
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
-import {LeftNavComponent } from './share/left_nav/left-nav/left-nav.component';
+import {LeftNavComponent } from './share/left-nav/left-nav.component';
+import {FooterComponent } from './share/footer/footer.component';
+import { PhysicsComponent } from './subjects/physics/physics.component';
+
+
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatDividerModule} from '@angular/material/divider';
@@ -22,12 +29,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSelectModule} from '@angular/material/select';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatTabsModule} from '@angular/material/tabs';
-
-
-
-
-
-
+import {MatCardModule} from '@angular/material/card';
+import { ChemistryComponent } from './subjects/chemistry/chemistry.component';
+import { MathematicsComponent } from './subjects/mathematics/mathematics.component';
 
 
 
@@ -38,7 +42,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     VerifyComponent,
     HomeComponent,
     LeftNavComponent,
-    SignupComponent
+    SignupComponent, FooterComponent, PhysicsComponent, ChemistryComponent, MathematicsComponent
    
   ],
   imports: [
@@ -53,6 +57,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatToolbarModule,
     MatSidenavModule,
     MatDividerModule,
+    MatCardModule,
     MatGridListModule,MatSelectModule,MatBadgeModule,MatTabsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
