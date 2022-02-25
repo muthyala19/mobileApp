@@ -1,0 +1,154 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+.carousel.slide img {
+width:100%;
+height:auto;
+}
+.carousel img {
+border-radius: 0px;
+}
+/* .carousel-control.left, .carousel-control.right {
+background: none;
+color: @red;
+border: none;
+} */
+.carousel-control.left {color: black;}
+.carousel-control.right {color: black;}
+
+/* DIV BOXES */
+.bottomFarLeftBox {
+height: 170px;
+width: 95%;
+margin-left: 5%;
+background-color: #4B92DB;
+float: left;
+clear: none;
+}
+.bottomMidLeftBox {
+height: 170px;
+width: 95%;
+margin-right: 5%;
+background-color: #4B92DB;
+float: right;
+clear: none;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img{
+width: 70%;
+height: 200px;
+margin: auto;
+}
+</style>
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+
+<div class="row">
+<div class="col-sm-1"></div>
+ <div class="col-sm-5">
+   <a href="/TrainingResourceCenter/O365Training/Pages/OneDrive.aspx">
+     <div class="bottomFarLeftBox">
+       <img src="./img/gmat.jpg" />
+       <div class="carousel-caption">
+       <p>Store files in one place, share them with others, and get to them from any device connected to the internet.</p>
+       </div>
+     </div>
+   </a>
+ </div>
+ <div class="col-sm-5">
+   <a href="/TrainingResourceCenter/O365Training/Pages/Delve.aspx">
+     <div class="bottomMidLeftBox">
+       <img src="./img/ielts.jpg" />
+       <div class="carousel-caption">
+       <p>It&#39;s more than your employee profile! Get personal insights and relevant information based on who you work with and the content you work on.</p>
+       </div>
+     </div>
+   </a>
+ </div>
+ <div class="col-sm-1"></div>
+ </div>
+ </div>
+
+<div class="item">
+<div class="row">
+<div class="col-sm-1"></div>
+ <div class="col-sm-5">
+   <a href="/TrainingResourceCenter/O365Training/Pages/OneDrive.aspx">
+     <div class="bottomFarLeftBox">
+       <img src="/TrainingResourceCenter/O365Training/PublishingImages/onedrive-logo.png" />
+       <div class="carousel-caption">
+       <p>I am second</p>
+       </div>
+     </div>
+   </a>
+ </div>
+ <div class="col-sm-5">
+   <a href="/TrainingResourceCenter/O365Training/Pages/Delve.aspx">
+     <div class="bottomMidLeftBox">
+       <img src="/TrainingResourceCenter/O365Training/PublishingImages/onedrive-logo.png" />
+       <div class="carousel-caption">
+       <p>I am second of second</p>
+       </div>
+     </div>
+   </a>
+ </div>
+ <div class="col-sm-1"></div>
+</div>
+</div>
+
+<div class="item">
+<div class="row">
+<div class="col-sm-1"></div>
+ <div class="col-sm-5">
+   <a href="/TrainingResourceCenter/O365Training/Pages/OneDrive.aspx">
+     <div class="bottomFarLeftBox">
+       <img src="/TrainingResourceCenter/O365Training/PublishingImages/onedrive-logo.png" />
+       <div class="carousel-caption">
+       <p>I am the third</p>
+       </div>
+     </div>
+   </a>
+ </div>
+ <div class="col-sm-5">
+   <a href="/TrainingResourceCenter/O365Training/Pages/Delve.aspx">
+     <div class="bottomMidLeftBox">
+       <img src="/TrainingResourceCenter/O365Training/PublishingImages/onedrive-logo.png" />
+       <div class="carousel-caption">
+       <p>I am the third of third</p>
+       </div>
+     </div>
+   </a>
+ </div>
+ <div class="col-sm-1"></div>
+</div>
+</div>
+
+<!-- Left and right controls -->
+<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>  
