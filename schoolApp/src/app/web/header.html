@@ -1,7 +1,11 @@
+<style>
+    .red-color {
+        color: #ef233c !important;
+    }
+</style>
 <header class="reworked">
     <div class="section-navbar-head">
         <div class="container">
-
             <div class="logo">
                 <a href="/global-en/home">
                     <img src="img/logo.jpg">
@@ -10,58 +14,122 @@
         </div>
     </div>
     <div id="nav_bu" class="navbar navbar-default" role="navigation">
-
         <div class="section-navbar-main">
             <div class="container">
                 <div class="navbar-header clearfix">
                     <ul class="navbar-nav">
 
                         <li data-page-id="1412901213637" class="has-sub">
-                            <a href="?page=home">Home</a>
+                            <a href="?page=home" ng-class="{'red-color': url == 'home' }">Home</a>
                         </li>
                         <li data-page-id="1412901701399" class="has-sub">
-                            <a href="?page=about">About Us</a>
+                            <a href="?page=about" ng-class="{'red-color': url == 'about' }">About Us</a>
                         </li>
+
+
                         <li data-page-id="1412901191629" class="has-sub">
-                            <a href="test prepration">Test Prepration</a>
+                            <a href="" ng-class="{'red-color': url == 'test-prepration' }">Test
+                                Prepration</a>
+                            <ul>
+                                <li class="has-sub"> <a href="?page=ielts"
+                                        ng-class="{'red-color': url == 'ielts' }">IELTS</a>
+                                </li>
+
+                                <li class="has-sub"> <a href="?page=pte" ng-class="{'red-color': url == 'pte' }">PTE</a>
+                                </li>
+                                <li class="has-sub"> <a href="?page=sat" ng-class="{'red-color': url == 'sat' }">SAT</a>
+                                </li>
+                                <li class="has-sub"> <a href="?page=toefl"
+                                        ng-class="{'red-color': url == 'toefl' }">TOEFL</a>
+                                </li>
+                                <li class="has-sub"> <a href="?page=gre" ng-class="{'red-color': url == 'gre' }">GRE</a>
+                                </li>
+                                <li class="has-sub"> <a href="?page=gmat" ng-class="{'red-color': url == 'gmat' }">G
+                                        MAT</a>
+                                </li>
+                            </ul>
                         </li>
                         <li data-page-id="1412901714942" class="has-sub">
-                            <a href="study abroad">Study Abroad</a>
+                            <a href="" ng-class="{'red-color': url == 'study-abroad' }">Study
+                                Abroad</a>
+                            <ul>
+                                <li class="has-sub"> <a href="?page=study-in-usa"
+                                        ng-class="{'red-color': url == 'study-in-usa' }">Study in USA</a>
+                                </li>
+                                <li class="has-sub"> <a href="?page=study-in-usa"
+                                        ng-class="{'red-color': url == 'study-in-usa' }">Study in USA</a>
+                                </li>
+                                <li class="has-sub"> <a href="?page=study-in-usa"
+                                        ng-class="{'red-color': url == 'study-in-usa' }">Study in USA</a>
+                                </li>
+                                <li class="has-sub"> <a href="?page=study-in-usa"
+                                        ng-class="{'red-color': url == 'study-in-usa' }">Study in USA</a>
+                                </li>
+                                <li class="has-sub"> <a href="?page=study-in-usa"
+                                        ng-class="{'red-color': url == 'study-in-usa' }">Study in USA</a>
+                                </li>
+                                <li class="has-sub"> <a href="?page=study-in-usa"
+                                        ng-class="{'red-color': url == 'study-in-usa' }">Study in USA</a>
+                                </li>
+                            </ul>
                         </li>
+
+                        <style>
+                            header.reworked .navbar-nav>li.has-sub>ul {
+                                display: none;
+                                position: absolute;
+                                z-index: 9999;
+                                background: white;
+                                width: 150px;
+                                padding: 0px 10px;
+                            }
+
+                            header.reworked .navbar-nav>li.has-sub>ul>li {
+                                margin: 10px 0px;
+                                cursor: pointer;
+                                border-bottom: .1em dashed #a09f9f;
+                                padding-bottom: 5px;
+                            }
+
+                            header.reworked .navbar-nav>li.has-sub>ul>li:hover {
+                                margin: 10px 0px;
+                                cursor: pointer;
+                                color: #ef233c;
+                            }
+
+                            header.reworked .navbar-nav>li.has-sub:hover>ul {
+                                display: block;
+                            }
+                        </style>
+
                         <li data-page-id="1412911795569" class="has-sub">
-                            <a href="services">Services</a>
+                            <a href="?page=gallery" ng-class="{'red-color': url == 'gallery' }">Gallery</a>
                         </li>
                         <li data-page-id="1912897450170">
-                            <a href="contact">Contact</a>
+                            <a href="?page=contact" ng-class="{'red-color': url == 'contact' }">Contact</a>
 
                         </li>
+                        <!-- <li data-page-id="1912897450170">
+                            <a href="?page=study-in-usa"
+                                ng-class="{'red-color': url == 'study-in-usa' }">study-in-usa</a>
 
-                    </ul>
+                        </li> -->
                 </div>
             </div>
         </div>
-
         <div class="section-navbar-meta">
             <div class="container">
                 <div class="navbar-helpers">
-
-
                     <ul class="nav nav-pills meta-links" role="navigation">
                         <li class="has-sub">
-
                             <span>Signup for free Consultaion</span>
-
-
                         </li>
-
                         <li><a href="mailto:info@ncoverseas.com">Email:info@ncoverseas.com</a></li>
                         <li><a href="tel:+4733378901">+91 984 826 5667</a></li>
-
                     </ul>
                 </div>
             </div>
         </div>
-
     </div>
     <div id="mobile-off-canvas-container-ID"></div>
 </header>
